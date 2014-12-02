@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">精品管家</string>
+    <string name="navigation_drawer_open">抽屉打开</string>
+    <string name="navigation_drawer_close">抽屉关闭</string>
+    <string name="home">精品推荐</string>
+    <string name="beauty">美女壁纸</string>
+    <string name="discover">今日天气</string>
+    <string name="activity">应用管理</string>
+    <string name="quit">退出应用</string>
+    <string name="quit_context">亲，确认退出应用？</string>
+    <string name="about_context">喜欢开源项目，最新Matrial风格，喜欢Coding，集成最新开源项目，最全的上手实例，这里有数据交互，也有UI动画，让我们一起研究，一起学习，共同进步？</string>
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="about">关于我们</string>
+    <string name="settings">应用设置</string>
+    <string name="settings_clear_disk">清除内存缓存</string>
+    <string name="settings_clear_memory">清除SD卡缓存</string>
+    <string name="memory_canuse">内存可用:</string>
+    <string name="sdcard_canuse">SD卡可用:</string>
+    <string name="memory_percent">使用内存</string>
+    <string name="content_description">Image View</string>
+    <!-- Download -->
+    <string name="btn_delete">卸载</string>
+    <string name="btn_down">下载</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_open">打开</string>
+    <string name="btn_retry">重试</string>
+    <string name="btn_stop">暂停</string>
+    <string name="tip_loading">加载中..</string>
+    <string name="warning_sdcard_unmounted">未挂载SD卡</string>
+    <string name="check_network">正在检测网络</string>
+    <string name="network_status">检测到您正在使用%1$s网络</string>
+    <string name="network_wifi">WIFI</string>
+    <string name="network_valid">3G</string>
+    <string name="network_cmwap">CMWAP</string>
+    <string name="network_invalid">无网络</string>
+    <string name="network_no_permission">无网络访问权限</string>
+    <string name="no_valid_network">对不起，请检查网络是否可用？</string>
+    <string name="network_retry">重试</string>
+    <string name="network_setting">设置</string>
+    <string name="whats_happening"> QQ:515258989</string>
+    <string name="net_err">网络异常</string>
+    <string name="action_refresh">刷新</string>
+    <!-- Weather -->
+    <string name="city_exceed_num">最多只能添加5个城市</string>
+    <string name="city_already_exists">城市已经存在</string>
+    <string name="city_add_success">城市添加成功</string>
+    <string name="string_add_city">添加城市</string>
+    <string name="action_add">添加</string>
+    <string name="album_link">进入专辑</string>
+    <!-- XListview -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="xlistview_footer_hint_finish">亲，没有更多啦！</string>
+
+</resources>

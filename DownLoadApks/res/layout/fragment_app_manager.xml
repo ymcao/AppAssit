@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gpb="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/com.appassit"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.appassit.widget.googleprogress.GoogleProgressBar
+        android:id="@+id/ll_loading"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/header_height"
+        android:visibility="gone"
+        gpb:type="folding_circles" />
+
+    <com.appassit.widget.jazzylistview.JazzyListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        app:effect="cards"
+        app:max_velocity="0"
+        app:only_animate_fling="false"
+        app:only_animate_new_items="false" />
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        layout="@layout/common_phone_status" />
+
+</RelativeLayout>

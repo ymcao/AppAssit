@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@color/cpb_white"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:id="@+id/descrip_rl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp" >
+
+        <ImageView
+            android:id="@+id/ivAppIcon"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="25dip"
+            android:layout_toRightOf="@+id/ivAppIcon"
+            android:textColor="#808080"
+            android:textSize="@dimen/font_size_m"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/totalTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nameTv"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/ivAppIcon"
+            android:textColor="#1E88E5"
+            android:textSize="@dimen/font_size_s" />
+
+        <com.appassit.widget.RippleView
+            android:id="@+id/downBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            ripple:rv_color="@color/blue_dark"
+            ripple:rv_type="rectangle"
+            ripple:rv_zoom="true" >
+
+            <TextView
+                android:id="@+id/downStatus"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="5dp"
+                android:background="@color/cpb_blue"
+                android:gravity="center"
+                android:text="@string/btn_down"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_s" />
+        </com.appassit.widget.RippleView>
+    </RelativeLayout>
+
+    <com.appassit.widget.NumberProgressBar
+        android:id="@+id/progressBar"
+        style="@style/NumberProgressBar_Relax_Blue"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/descrip_rl"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        custom:progress="0" />
+
+</RelativeLayout>

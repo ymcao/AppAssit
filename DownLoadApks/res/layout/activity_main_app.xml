@@ -1,0 +1,65 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerLayout"
+    style="@style/Match" >
+
+    <FrameLayout
+        android:id="@+id/contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainAppActivity" />
+
+        <com.appassit.widget.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/background_tabs" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearDrawer"
+        android:layout_width="@dimen/navigation_drawer_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/cpb_blue"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/userDrawerHeader"
+            android:layout_width="@dimen/navigation_drawer_width"
+            android:layout_height="@dimen/navigation_drawer_personal_data_layout_height" >
+
+            <ImageView
+                android:id="@+id/locationBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/background_location" />
+
+            <TextView
+                android:id="@+id/locationText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/locationBtn"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_size_m"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/navigationDrawerListViewWrapper"
+            layout="@layout/navigation_drawer_rl" />
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

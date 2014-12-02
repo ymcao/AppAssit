@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/album_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:background="@color/album_title_bg_color">
+	    <TextView 
+	        android:id="@+id/album_date"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:textSize="@dimen/album_date_size"
+	        android:textColor="@color/album_date_color"
+	        android:layout_marginLeft="@dimen/album_margin" />
+	    <TextView 
+	        android:id="@+id/album_month"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/album_date"
+	        android:textSize="@dimen/album_month_size"
+	        android:textColor="@color/album_month_color"
+	        android:layout_marginBottom="@dimen/album_month_bottom"
+            android:layout_alignBottom="@+id/album_name" />
+	    <TextView 
+	        android:id="@+id/album_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@+id/album_month"
+	        android:layout_alignBottom="@+id/album_date"
+	        android:textSize="@dimen/album_name_size"
+	        android:textColor="@color/album_name_color"
+	        android:layout_marginBottom="@dimen/album_name_bottom"
+	        android:layout_marginLeft="@dimen/album_name_left" />
+
+	    <LinearLayout
+	        android:id="@+id/album_link"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:layout_alignBottom="@+id/album_name"
+	        android:layout_alignParentRight="true"
+	        android:visibility="invisible"
+	        android:layout_marginRight="@dimen/album_margin" >
+
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+                android:layout_gravity="center_vertical"
+	            android:src="@drawable/album_link" />
+
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:text="@string/album_link"
+	            android:textColor="@color/album_link_color"
+	            android:textSize="@dimen/album_link_size"
+	            android:paddingBottom="@dimen/album_link_txt_bottom"
+	            android:layout_marginLeft="@dimen/album_link_txt_left" />
+	    </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/album_images_bg_color"
+        android:orientation="vertical">
+	    <com.appassit.views.CustomImageView 
+	        android:id="@+id/album_image"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="@dimen/album_margin"
+	        android:visibility="gone"
+	        android:scaleType="centerCrop"/>
+	    <LinearLayout 
+	        android:id="@+id/album_past"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:orientation="horizontal"
+	        android:visibility="visible"
+	        android:layout_margin="@dimen/album_margin" >
+	        <com.appassit.views.CustomImageView 
+	            android:id="@+id/album_image1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:scaleType="centerCrop"/>
+	        <com.appassit.views.CustomImageView 
+	            android:id="@+id/album_image2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:scaleType="centerCrop"
+	            android:layout_marginLeft="@dimen/album_past_space"/>
+	        <com.appassit.views.CustomImageView 
+	            android:id="@+id/album_image3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:scaleType="centerCrop"
+	            android:layout_marginLeft="@dimen/album_past_space"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
